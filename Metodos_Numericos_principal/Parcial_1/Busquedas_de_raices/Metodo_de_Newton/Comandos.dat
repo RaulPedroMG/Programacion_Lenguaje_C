@@ -1,0 +1,21 @@
+plot sin(x)
+set xrange[2:5]
+set yrange[-2:2]
+replot
+unset key
+set title "Graficación del Método de Newton"
+set label "Metodos numericos" at 3.0,2.1
+plot sin(x)
+replot 0
+set arrow from -1.000000,-15.000000 to -0.347826,0
+set arrow from -0.347826,0 to -0.347826,-3.550588
+replot
+set arrow from -0.347826,-3.550588 to -0.064614,0
+set arrow from -0.064614,0 to -0.064614,-0.542234
+replot
+set arrow from -0.064614,-0.542234 to -0.002912,0
+set arrow from -0.002912,0 to -0.002912,-0.023346
+replot
+set arrow from -0.002912,-0.023346 to -0.000006,0
+set arrow from -0.000006,0 to -0.000006,-0.000051
+replot

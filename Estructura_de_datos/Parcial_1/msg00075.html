@@ -1,0 +1,102 @@
+<!-- MHonArc v2.6.15 -->
+<!--X-Subject: PKG_CONFIG_PATH variable -->
+<!--X-From-R13: zvyyjneq <zvyyjneqN[f.G[navgbon.QO> -->
+<!--X-Date: Sun,  8 Sep 2002 11:52:22 &#45;0400 (EDT) -->
+<!--X-Message-Id: 200209081552.g88FqI6n025357@naos.cc.umanitoba.ca -->
+<!--X-Content-Type: text/plain -->
+<!--X-Head-End-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>PKG_CONFIG_PATH variable</title>
+<link rev="made" href="mailto:millward%20Ms%20UManitoba%20CA">
+</head>
+<body bgcolor="#FFFFFF">
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+<hr>
+[<a href="http://mail.gnome.org/archives/gtk-list/2002-September/msg00102.html">Date Prev</a>][<a href="http://mail.gnome.org/archives/gtk-list/2002-September/msg00076.html">Date Next</a>] &nbsp; [<a href="http://mail.gnome.org/archives/gtk-list/2002-September/msg00102.html">Thread Prev</a>][<a href="http://mail.gnome.org/archives/gtk-list/2002-September/msg00089.html">Thread Next</a>] &nbsp; 
+[<a href="http://mail.gnome.org/archives/gtk-list/2002-September/thread.html#00075">Thread Index</a>]
+[<a href="http://mail.gnome.org/archives/gtk-list/2002-September/date.html#00075">Date Index</a>]
+[<a href="http://mail.gnome.org/archives/gtk-list/2002-September/author.html#00075">Author Index</a>]
+
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+<h1>PKG_CONFIG_PATH variable</h1>
+<hr>
+<!--X-Subject-Header-End-->
+<!--X-Head-of-Message-->
+<ul>
+<li><em>From</em>: millward &lt;millward Ms UManitoba CA&gt;</li>
+<li><em>To</em>: gtk-list gnome org</li>
+<li><em>Subject</em>: PKG_CONFIG_PATH variable</li>
+<li><em>Date</em>: Sun, 8 Sep 2002 10:52:11 -0500</li>
+</ul>
+<!--X-Head-of-Message-End-->
+<!--X-Head-Body-Sep-Begin-->
+<hr>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<pre>Could someone tell me how to set the 
+PKG_CONFIG_PATH environment variable?
+I've upgraded rpm -Uvh glib2-2.0.4-1gtk.i386.rpm,
+but when I do a:
+ pkg-config glib-2.0 --modversion 
+I get an error message:
+ Package glib-2.0 was not found in the pkg-config 
+search path. Perhaps you should add the directory 
+containing 'glib-2.0.pc' to the PKG_CONFIG_PATH
+environment variable. No package 'glib-2.0' found.
+
+I have checked .bashrc and .bash_profile for both
+my root and user account and neither has the
+PKG_CONFIG_PATH listed.
+glib-2.0.pc is in /usr/lib/pkgconfig
+ This is what glib-2.0.pc looks like:
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: GLib
+Description: C Utility Library
+Version: 1.2.10
+Libs: -L${libdir} -lglib
+Cflags: -I${includedir}/glib-1.2 -I${libdir}/glib/include
+
+Nothing in it about version 2.0.4 or 2.0 at all.
+So far, upgrading GTK has been very frustrating.
+Any suggestions would be most welcome.
+
+
+
+</pre>
+<!--X-Body-of-Message-End-->
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<hr>
+<ul><li><strong>Follow-Ups</strong>:
+<ul>
+<li><strong><a name="00089" href="http://mail.gnome.org/archives/gtk-list/2002-September/msg00089.html">Re: PKG_CONFIG_PATH variable</a></strong>
+<ul><li><em>From:</em> Sven Neumann</li></ul></li>
+</ul></li></ul>
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<!--X-References-End-->
+<!--X-BotPNI-->
+<hr>
+[<a href="http://mail.gnome.org/archives/gtk-list/2002-September/msg00102.html">Date Prev</a>][<a href="http://mail.gnome.org/archives/gtk-list/2002-September/msg00076.html">Date Next</a>] &nbsp; [<a href="http://mail.gnome.org/archives/gtk-list/2002-September/msg00102.html">Thread Prev</a>][<a href="http://mail.gnome.org/archives/gtk-list/2002-September/msg00089.html">Thread Next</a>] &nbsp; 
+[<a href="http://mail.gnome.org/archives/gtk-list/2002-September/thread.html#00075">Thread Index</a>]
+[<a href="http://mail.gnome.org/archives/gtk-list/2002-September/date.html#00075">Date Index</a>]
+[<a href="http://mail.gnome.org/archives/gtk-list/2002-September/author.html#00075">Author Index</a>]
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+
+
+</body></html>

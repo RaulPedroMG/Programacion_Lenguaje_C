@@ -1,0 +1,17 @@
+#Ejemplo de Automata
+#Alfabeto de entrada
+a,b
+#Conjunto de estados
+p,q,r,s,t,u,v
+#Estado inicial
+p
+#Estado de aceptacion
+u
+#Funciones de transicion
+q,r
+s,t
+u,v
+s,t
+u,v
+s,t
+u,v

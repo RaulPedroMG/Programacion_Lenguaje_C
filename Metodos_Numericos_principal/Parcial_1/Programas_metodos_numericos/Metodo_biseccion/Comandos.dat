@@ -1,0 +1,71 @@
+plot sin(x)
+set xrange[2:5]
+set yrange[-2:2]
+replot
+unset key
+set title "Metodos numericos                     Graficación del Método de Newton"
+plot sin(x)
+replot 0
+set arrow from -3.000000,0 to -3.000000,-11.844693
+set arrow from 0.000000,0 to 0.000000,1.000000
+replot
+set arrow from -1.500000,0 to -1.500000,-2.983825
+set arrow from 0.000000,0 to 0.000000,1.000000
+replot
+set arrow from -1.500000,0 to -1.500000,-2.983825
+set arrow from -0.750000,0 to -0.750000,1.956200
+replot
+set arrow from -1.500000,0 to -1.500000,-2.983825
+set arrow from -1.125000,0 to -1.125000,1.018736
+replot
+set arrow from -1.312500,0 to -1.312500,-0.610426
+set arrow from -1.125000,0 to -1.125000,1.018736
+replot
+set arrow from -1.312500,0 to -1.312500,-0.610426
+set arrow from -1.218750,0 to -1.218750,0.316111
+replot
+set arrow from -1.265625,0 to -1.265625,-0.119911
+set arrow from -1.218750,0 to -1.218750,0.316111
+replot
+set arrow from -1.265625,0 to -1.265625,-0.119911
+set arrow from -1.242188,0 to -1.242188,0.105089
+replot
+set arrow from -1.253906,0 to -1.253906,-0.005680
+set arrow from -1.242188,0 to -1.242188,0.105089
+replot
+set arrow from -1.253906,0 to -1.253906,-0.005680
+set arrow from -1.248047,0 to -1.248047,0.050139
+replot
+set arrow from -1.253906,0 to -1.253906,-0.005680
+set arrow from -1.250977,0 to -1.250977,0.022338
+replot
+set arrow from -1.253906,0 to -1.253906,-0.005680
+set arrow from -1.252441,0 to -1.252441,0.008356
+replot
+set arrow from -1.253906,0 to -1.253906,-0.005680
+set arrow from -1.253174,0 to -1.253174,0.001345
+replot
+set arrow from -1.253540,0 to -1.253540,-0.002166
+set arrow from -1.253174,0 to -1.253174,0.001345
+replot
+set arrow from -1.253357,0 to -1.253357,-0.000410
+set arrow from -1.253174,0 to -1.253174,0.001345
+replot
+set arrow from -1.253357,0 to -1.253357,-0.000410
+set arrow from -1.253265,0 to -1.253265,0.000468
+replot
+set arrow from -1.253357,0 to -1.253357,-0.000410
+set arrow from -1.253311,0 to -1.253311,0.000029
+replot
+set arrow from -1.253334,0 to -1.253334,-0.000191
+set arrow from -1.253311,0 to -1.253311,0.000029
+replot
+set arrow from -1.253323,0 to -1.253323,-0.000081
+set arrow from -1.253311,0 to -1.253311,0.000029
+replot
+set arrow from -1.253317,0 to -1.253317,-0.000026
+set arrow from -1.253311,0 to -1.253311,0.000029
+replot
+set arrow from -1.253317,0 to -1.253317,-0.000026
+set arrow from -1.253314,0 to -1.253314,0.000001
+replot

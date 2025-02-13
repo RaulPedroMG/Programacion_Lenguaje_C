@@ -1,0 +1,61 @@
+
+	char nombre[MAX];
+
+mvprintw(2,4,"1:llenar lista");
+	mvprintw(4,4,"2:imprimir lista");
+	mvprintw(6,4,"3:bucar dato lista");
+	mvprintw(8,4,"4:eliminar dato");
+	mvprintw(10,4,"5:salir");
+
+
+
+LeeMatricula(aux,5,15);
+	i = Buscar(lista, &total, aux);
+	imprimir (lista,i);
+	LeeMatricula(aux,5,15);
+	Eliminar(lista,&total, aux);
+	ImpDatos(lista,total);
+	
+
+
+
+void imprimir (Alumno l[ML],int g); 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ void imprimir (Alumno l[ML],int g)
+{
+	int i;
+	WINDOW *w2;
+	w2 = newwin(15,40,3,15);
+	clear();
+	attron(A_BOLD);
+	Centrar("DATOS DE ALUMNOS",2);
+	//attroff(A_BOLD);
+	if (g == -1)
+		mvprintw(5,5,"NO HAY DATOS LEIDOS");
+	else
+	{
+		//attron(A_BOLD);
+		mvprintw(4,1,"NUM");
+		mvprintw(4,7,"MATRICULA");
+		mvprintw(4,19,"Parcial 1 ");
+		mvprintw(4,31,"Parcial 2 ");
+		mvprintw(4,43,"Parcial 3 ");
+		mvprintw(4,55,"Ordinario ");
+		mvprintw(4,69,"Final ");
+		attroff(A_BOLD);
+		mvprintw(5,1,"%2d.  %11s",l[i].mat);
+		for (g=0; g<CAL;g++)
+		{
+			mvprintw(5,21+12*g,"%4.1f",l[i].calif[g]);
+		}
+	}
+	getch();
+	delwin(w2);
+}

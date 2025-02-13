@@ -1,0 +1,21 @@
+plot sin(x)
+set xrange[1.5:4]
+set yrange[-0.5:1]
+replot
+unset key
+set title "Graficación del Método de falsa posición"
+set label "Metodos numericos" at 2.6,1.02
+plot sin(x)
+replot 0
+set arrow from 2.000000,0.909297 to 3.500000,-0.350783
+replot
+set arrow from 2.000000,0.909297 to 3.082428,0.059130
+replot
+set arrow from 2.000000,0.909297 to 3.157712,-0.016119
+replot
+set arrow from 2.000000,0.909297 to 3.137547,0.004045
+replot
+set arrow from 2.000000,0.909297 to 3.142631,-0.001038
+replot
+set arrow from 2.000000,0.909297 to 3.141328,0.000265
+replot

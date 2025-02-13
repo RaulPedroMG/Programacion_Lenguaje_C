@@ -1,0 +1,10 @@
+Dice la leyenda que, al crear el mundo, Dios situó sobre la tierra
+tres varillas de DIAMANTE y sesenta y cuatro discos de ORO. Los discos
+son todos de diferente tamaño e inicialmente fueron colocados en orden
+decreciente de diámetros sobre la primera de las varillas. También
+creó Dios un monasterio cuyos monjes tienen la tarea de trasladar todos 
+los discos desde la primera varilla a la tercera. La única operación 
+permitida es mover un disco de una varilla a otra cualquiera, pero con
+la condición de que no se puede situar encima de un disco otro de 
+diámetro mayor. La leyenda dice también que cuando los monjes terminen
+su tarea, el mundo se acabará.

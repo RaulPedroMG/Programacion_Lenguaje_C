@@ -1,0 +1,22 @@
+digraph g{
+rankdir="LR";size="5,7;"
+
+node [shape = point, color=white, fontcolor=white]; start;
+node [shape = doublecircle, color=black, fontcolor=black] u;
+node [shape = circle];start-> p
+p -> q [label=" a "];
+p -> r [label=" b "];
+q -> s [label=" a "];
+q -> t [label=" b "];
+r -> u [label=" a "];
+r -> v [label=" b "];
+s -> s [label=" a "];
+s -> t [label=" b "];
+t -> u [label=" a "];
+t -> v [label=" b "];
+u -> s [label=" a "];
+u -> t [label=" b "];
+v -> u [label=" a "];
+v -> v [label=" b "];
+
+}

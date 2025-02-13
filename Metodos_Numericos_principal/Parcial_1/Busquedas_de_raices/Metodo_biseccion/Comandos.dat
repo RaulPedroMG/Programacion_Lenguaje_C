@@ -1,0 +1,8 @@
+plot sin(x)
+set xrange[2:5]
+set yrange[-2:2]
+replot
+unset key
+set title "Metodos numericos                     Graficación del Método de Newton"
+plot sin(x)
+replot 0

@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+//#define K 6000
+//#define r 0.1
+
+/*float f (float T, float P){
+	return r / K * P * (K - P);
+}*/
+float f (float x, float y){
+	return (y + (x*x))*sin(x);
+}
+
+int main (){
+	float Ti, Tf, Po, P, T, AT, K1, K2, K3, K4, xi, xf ,x, y, yi, fx, fxi;
+	int N, i;
+	char archivo[30];
+	FILE *salida;
+//	printf("Introduce la población inicial : ");
+	//scanf("%f", &Po);
+	printf("Introduce la condición inicial : ");
+	scanf("%f", &yi);
+	printf("\nIntroduce el tiempo inicial : ");
+	scanf("%f", &xi);
+	printf("\nIntroduce el tiempo final : ");
+	scanf("%f", &xf);
+	printf("\nIntroduce el número de puntos a avaluar : ");
+	scanf("%d", &N);
+	printf("\nIntroduce el nombre del archivo de salida : ");
+	scanf("%s",archivo);
+//	AT = (Tf - Ti) / N;
+	A = (xf - xi) / N;
+	//T = Ti;
+	x = xi;
+//	P = Po;
+	y = yi;
+	salida = fopen(archivo, "w");
+	for (i = 0; i < N; i++){
+/*		K1 = AT * f(T, P);
+		K2 = AT * f(T + K/2, P + K1/2); 
+		K3 = AT * f(T + K/2, P + K2/2);
+		K4 = AT * f(T + K, P + K3);
+		P = P + (K1 + K2 + K3 + K4) / 6;*/
+//		T += AT;
+		fprintf(salida, "%f %f\n", x, y);
+		y = f(x, y);
+		x += A;
+//		fprintf(salida, "%f %f\n", T, P);
+	}
+	fclose(salida);
+	return 0;
+}

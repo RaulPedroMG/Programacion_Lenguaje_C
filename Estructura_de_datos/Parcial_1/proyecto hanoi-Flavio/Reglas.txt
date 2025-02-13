@@ -1,0 +1,11 @@
+Eljuego consiste en pasar todos los discos de  la pila ocupada
+(es decir la que posee la torre)a una de las otras pilas vacantes.
+ 
+Para realizar este objetivo, es necesario seguir tres simples reglas:
+
+1.-Sólo se puede mover un disco cada vez.
+
+2.-Un disco de mayor tamaño no puede descansar sobre uno más pequeño que 
+él mismo.
+
+3.-Sólo puedes desplazar el disco que se encuentre arriba en cada pila.

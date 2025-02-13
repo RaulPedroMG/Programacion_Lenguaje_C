@@ -1,0 +1,21 @@
+plot sin(x)
+set xrange[2:5]
+set yrange[-2:2]
+replot
+unset key
+set title "Graficación del Método de secante"
+set label "Metodos numericos" at 3.0,2.1
+plot sin(x)
+replot 0
+set arrow from 2.000000,0.909297 to 4.188735,0
+set arrow from 4.188735,0 to 4.188735,-0.865998
+replot
+set arrow from 4.188735,-0.865998 to 2.459088,0
+set arrow from 2.459088,0 to 2.459088,0.630738
+replot
+set arrow from 2.459088,0.630738 to 3.273091,0
+set arrow from 3.273091,0 to 3.273091,-0.131120
+replot
+set arrow from 3.273091,-0.131120 to 3.140691,0
+set arrow from 3.140691,0 to 3.140691,0.000902
+replot
